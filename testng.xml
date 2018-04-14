@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="3" parallel="tests">
+	<test name="GoogleTest">
+		<parameter name="browser" value="Chrome" />
+		<parameter name="searchtext" value="www.payjo.co" />
+		<classes>
+			<class name="com.testing.demo.sample.TestGoogle">
+			</class>
+		</classes>
+	</test>
+
+	<test name="FlipkartTest">
+		<parameter name="browser" value="Chrome" />
+		<parameter name="username" value="8073744238" />
+		<parameter name="password" value="testing123" />
+		<parameter name="mobilename" value="iPhone 7" />
+		<classes>
+			<class name="com.testing.demo.sample.TestFlipkart">
+			</class>
+		</classes>
+	</test>
+	<test name="Currency">
+		<classes>
+			<class name="com.testing.demo.sample.RestAPICurrency">
+			</class>
+		</classes>
+	</test>
+</suite>

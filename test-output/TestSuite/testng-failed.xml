@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="tests">
+  <test thread-count="3" name="GoogleTest(failed)" parallel="tests">
+    <parameter name="searchtext" value="www.payjo.co"/>
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.testing.demo.sample.TestGoogle">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="testParameterWithXML" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.testing.demo.sample.TestGoogle -->
+    </classes>
+  </test> <!-- GoogleTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
